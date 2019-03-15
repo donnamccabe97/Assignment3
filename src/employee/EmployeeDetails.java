@@ -1,3 +1,4 @@
+package employee;
 
 /* * 
  * This is a menu driven system that will allow users to define a data structure representing a collection of 

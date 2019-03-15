@@ -1,3 +1,4 @@
+package employee;
 /*
  * 
  * This is a dialog for adding new Employees and saving records to file
@@ -8,6 +9,7 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -27,6 +29,9 @@ public class AddRecordDialog extends JDialog implements ActionListener {
 	JComboBox<String> genderCombo, departmentCombo, fullTimeCombo;
 	JButton save, cancel;
 	EmployeeDetails parent;
+	
+	private static final DecimalFormat format = new DecimalFormat("\u20ac ###,###,##0.00");
+	
 	// constructor for add record dialog
 	public AddRecordDialog(EmployeeDetails parent) {
 		setTitle("Add Record");
